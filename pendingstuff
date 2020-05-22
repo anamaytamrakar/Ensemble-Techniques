@@ -1,0 +1,19 @@
+Improvements pending - 
+- Model Building is completed with errors. 
+- First I have to create the standard classification algorithm and then choose appropriate algorithms and why that is used. 
+- Advantages & disadvantages of the algorithm used in the project. 
+- Compare results with the base model. 
+- Discussing key parameters available in the selected algorithm and what values I initialized in these parameters.
+- What are the regularization techniques used in the model. 
+- Will try these codes 
+  {
+    from sklearn.ensemble import AdaBoostClassifier 
+    abcl = AdaBoostClassifier( n_estimators= 200, learning_rate=0.1, random_state=22) 
+    abcl = abcl.fit(X_train, y_train) 
+    pred_AB = abcl.predict(X_test) a
+    cc_AB = accuracy_score(y_test, pred_AB) 
+    recall_AB = recall_score(y_test, pred_AB, pos_label='yes') 
+    tempResultsDf = pd.DataFrame({'Method':['Adaboost'], 'accuracy': [acc_AB], 'recall':[recall_AB]}) 
+    resultsDf = pd.concat([resultsDf, tempResultsDf]) 
+    resultsDf = resultsDf[['Method', 'accuracy', 'recall']] 
+  }
