@@ -1,6 +1,8 @@
 # Ensemble-Techniques
 This repository contains my project which helped in understanding the Ensemble Techniques for Artificial Intelligence and Machine Learning.
 
+Leveraged customer information of bank marketing campaigns to predict whether a customer will subscribe to term deposit or not. Different classification algorithms like Decision tree, Logistic Regression were used. Ensemble techniques like Random forest were used to further improve the classification results.
+
 1.	Writing a python code using scikitlearn, pandas, numpy and others in Jupyter notebook to train and test the ensemble model.
 2.	First creating a model using standard classification algorithm.
     Model performance.
