@@ -16,4 +16,4 @@ Improvements pending -
     tempResultsDf = pd.DataFrame({'Method':['Adaboost'], 'accuracy': [acc_AB], 'recall':[recall_AB]}) 
     resultsDf = pd.concat([resultsDf, tempResultsDf]) 
     resultsDf = resultsDf[['Method', 'accuracy', 'recall']] 
-  }
+ }
